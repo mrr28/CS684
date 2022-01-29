@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 
 <head>
-    <link rel="stylesheet" href="style.css">
-    <script src="/script.js"></script>
-
+    <link rel="stylesheet" href="index.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
 </head>
 
 <body>
 
-    <div class="panel">
-      
+    <div>
         <h1>This is CS 684!</h1>
-      
-        <h2> Welcome to the class and assignment 1</h2>
-      
-      <h3> Group Members: Harshal Bhole, John Paglia, Megan Resurreccion</h3>
-          
-        <h2> Webpage will return the return your name with API.</h2>
-      
-        <h3 id = "teamheader"></h3>
-      
-        <h3>Please type your name.</h3>
-      
-        <input type="text" id="inputBox">
-      
-        <button onclick="getTeamName()" id="myButton">Enter</button>
-        
-      <div id = "tokenvalue"></div>
+        <h2> Welcome to the Class and Assignment 2</h2>
         <br>
-        <label id="label1"> Your output is : </label>
-
-
+        <h2> Group Members: Harshal Bhole, John Paglia, Megan Resurreccion</h3>
+        <br>
+        <h2> This Webpage will return the return your Team's Name and Token value with an API.</h2>
+        
+        <div class = "apiinfo">
+            <h3>Api Data</h3>
+            <div class = "teamname">
+                <label class = "teamname_label" id = "teamname_label">Team Name: <t></t></label>
+                <input class = "enter_team" id = "enter_team" />
+                <p class = "teamheader" id = "teamheader"></p>
+            </div>
+            <div class = "token">
+                <label class = "tokenname_label" id = "tokenname_label">Token Value: </label>
+                
+                <p class = "tokenvalue" id = "tokenvalue"></p>
+            </div>
+            <div>
+                <button id="apicall">Get Team Data</button>
+                <button id="changeteam">Change Team</button>
+                <button id ="defaultteam">Default Team</button>
+            </div>
+            
+        </div>
     </div>
 
-    <script src="/script.js"></script>
+    <script src = "api.js" type = "text/javascript"></script>
 
 </body>
+
+</html>
