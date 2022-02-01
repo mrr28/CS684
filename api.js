@@ -4,6 +4,8 @@ let teamheader = document.getElementById("teamheader");
 //html tag that holds the token value
 let tokenvalue = document.getElementById("tokenvalue");
 
+const team = "Team Z";
+
 //html button that allows  you to call api without reloading the page
 let apicall = document.getElementById("apicall");
 
@@ -52,7 +54,7 @@ let getTeamInformation = () => {
 
 //Get Default team name and on page load
 let getTeam = () => {
-    return "Z";
+    return team;
 };
 
 //Update the teamname input box to the default value and query the api
