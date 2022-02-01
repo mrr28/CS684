@@ -48,7 +48,7 @@ let getTeamInformation = () => {
         },
         error: function (error) {
             console.log(error);
-        },
+        }
     });
 };
 
